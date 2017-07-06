@@ -73,9 +73,11 @@ body {
 
 }
 .intro {
-    font-size: 2em;
+    font-size: 300%;
     color: #F2F0F4;
-    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+
 }
 
 
