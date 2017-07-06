@@ -1,0 +1,88 @@
+/*
+    black - #3E3740 rgb(62, 55, 64)
+    white - #F2F0F4 rgb(242, 240, 244)
+    purple-dark -#494257 rgb(73, 66, 87)
+    purple - #504286 rgb(80, 66, 134)
+    brown - #BEABA8 rgb(190, 171, 168)
+ */
+
+body {
+    font-family: 'Droid Serif', serif;
+    font-size: 1em;
+    line-height: 1.4;
+    padding-top: 50px;
+}
+
+/*==================
+    HEADER
+ ==================*/
+
+
+.header-main .navbar-default {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    color: #3E3740;
+    font-size: 2em;
+    border-bottom: none;
+}
+
+.navbar-default .logo {
+    font-family: "Tangerine";
+    font-weight: bold;
+    font-size: 2em;
+    color: #3E3740;
+}
+
+.navbar-right li a{
+    font-size: 1em;
+}
+
+.navbar-default .navbar-nav>li>a {
+    fon-
+    color: #3E3740;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-right li a:focus, .navbar-default .navbar-right li a:hover {
+    background-color: #494257;
+    color: #F2F0F4;
+
+}
+
+/*==================
+    MAIN
+ ==================*/
+.main {
+    background: url('../img/header-background.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    height: 94.5vh;
+    width: 98.5vw;
+}
+
+.main:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top left,#3E3740,#BEABA8);
+    opacity: .6;
+
+}
+.intro {
+    font-size: 2em;
+    color: #F2F0F4;
+}
+
+
+.intro__img {
+    border:10px solid #504286;
+    border-radius: 50%;
+
+}
+/*==================
+    FOOTER
+ ==================*/
