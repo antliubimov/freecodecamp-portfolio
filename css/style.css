@@ -38,16 +38,77 @@ body {
     font-size: 1em;
 }
 
-.navbar-default .navbar-nav>li>a {
-    fon-
-    color: #3E3740;
+.navbar-default .navbar-nav li a {
+    display: block;
+    /*float: left;*/
+    height: 50px;
+
+    text-align: center;
+    padding: 15px 20px 0 40px;
+    position: relative;
+    margin: 0 10px 0 0;
+    border-radius: 0;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    background-color: #504286;
+    color: #F2F0F4;
     text-transform: uppercase;
 }
-.navbar-default .navbar-right li a:focus, .navbar-default .navbar-right li a:hover {
+
+.navbar-default .navbar-nav li a:before {
+    content: '';
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #f8f8f8;
+    position: absolute;
+    left: -1px;
+    top: 0;
+    padding: -1px 40px 0 80px;
+    z-index: 1;
+}
+
+.navbar-default .navbar-nav li a:after {
+    content: "";
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #504286;
+    position: absolute;
+    right: -26px;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-default .navbar-nav li a:hover:after {
+    border-left-color:  #494257;
+}
+
+.navbar-default .navbar-right li a:focus, .navbar-default .navbar-right li a:hover  {
     background-color: #494257;
     color: #F2F0F4;
 
 }
+
+.navbar-default .navbar-nav li:first-child a {
+    padding-left: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navbar-default .navbar-nav li:first-child a:before {
+    display: none;
+}
+
+.navbar-default .navbar-nav li:last-child a {
+    padding-right: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar-default .navbar-nav li:last-child a:after {
+    display: none;
+}
+
 
 /*==================
     MAIN
