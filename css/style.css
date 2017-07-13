@@ -158,14 +158,16 @@ body {
     margin-top: 50px;
 }
 
-.portfolio__title, .contact__title {
+.portfolio__title, .portfolio__continued, .contact__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 400%;
     font-weight: 700;
     color: #3E3740;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
+
 
 
 /*==================
