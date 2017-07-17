@@ -42,7 +42,6 @@ body {
 
 .navbar-default .navbar-nav li a {
     display: block;
-    /*float: left;*/
     height: 50px;
 
     text-align: center;
@@ -88,7 +87,7 @@ body {
 .navbar-default .navbar-right li a:focus, .navbar-default .navbar-right li a:hover  {
     background-color: #494257;
     color: #F2F0F4;
-
+    transition: .3s;
 }
 
 .navbar-default .navbar-nav li:first-child a {
@@ -173,8 +172,23 @@ body {
 /*==================
     CONTACTS
  ==================*/
-
-
+.form-control{
+    font-size: 1.7em;
+}
+.contact__submit {
+    color: #504286;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.contact__submit:hover  {
+    color: #F2F0F4;
+    background-color: #504286;
+    transition: .3s;
+}
+.contact__desc {
+    font-size: 1.7em;
+    line-height: 2;
+}
 /*==================
     FOOTER
  ==================*/
@@ -213,6 +227,7 @@ footer .container {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    transition: .3s;
 }
 
 .button .fa {
