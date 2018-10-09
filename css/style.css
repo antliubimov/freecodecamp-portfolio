@@ -28,6 +28,11 @@ body {
     border-radius: 0.25rem;
 }
 
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
 /*==================
     HEADER
  ==================*/
@@ -172,20 +177,23 @@ body {
     width: 100%;
     position: relative;
 }
-.main .container {
-    display: flex;
-}
+
 .intro {
-    font-size: 350%;
+    /* font-size: 350%; */
     color: #494257;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
+    display: flex;
+    width: 960px;
+margin: 0 auto;
+}
+.intro__about {
+
+
 }
 
 .intro__img {
     border: 10px solid #504286;
     border-radius: 50%;
+    /* width: 30%; */
 }
 
 /*==================
