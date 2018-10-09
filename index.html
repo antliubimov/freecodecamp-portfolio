@@ -5,49 +5,57 @@
     <title>My Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Montserrat|Tangerine" rel="stylesheet" >
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <script src="https://use.fontawesome.com/18fae94a5d.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
     <header class="header-main">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <a href="#" class="navbar-brand logo">
+        <nav class="navbar" id="navbar">
+            <div class="navbar-grid">
+                <a href="#" class="navbar-logo">
                     Alfavo
                 </a>
-                <nav class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about" class="btn">about</a></li>
-                        <li><a href="#portfolio" class="btn">portfolio</a></li>
-                        <li><a href="#contact" class="btn">contact</a></li>
+                <nav>
+                    <ul class="navbar-nav">
+                        <li><a href="#about" class="btn">About</a></li>
+                        <li><a href="#portfolio" class="btn">Portfolio</a></li>
+                        <li><a href="#contact" class="btn">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </nav>
     </header> <!-- end header -->
 
-    <main class="main" id="about">
+    <main class="main" id="welcome-section">
         <div class="container">
-            <header class="main__header" >
+
                 <div class="intro row">
-                    <p class="intro__about col-md-7">
-                        I'm Anton, a freelance frontend developer & sysadmin.  I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients all over the world.
+                    <h1>Hello I'm Anton</h1>
+                    <p class="intro__about">
+                        a freelance frontend developer & sysadmin.  I enjoy each aspect, and love building sites & mobile apps from start to finish, for clients all over the world.
                     </p>
                     <img class="intro__img  img-circle img-fluid" src="./img/man.jpg" alt="man">
                 </div>
-            </header>
+
         </div>
     </main>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="projects">
         <div class="container">
-            <h3 class="portfolio__title">Portfolio</h3>
-            <div class="portfolio__images clearfix">
-                <img src="./img/portfolio/glow.jpg" alt="Glow" class="portfolio__img img-fluid col-md-4 col-xs-12">
-                <img src="./img/portfolio/panakeia.jpg" alt="Panakeia" class="portfolio__img img-fluid col-md-4 col-xs-12">
-                <img src="./img/portfolio/the-modernist.jpg" alt="Modernist" class="portfolio__img img-fluid col-md-4 col-xs-12">
+            <h3 class="portfolio__title">My Projects</h3>
+            <div class="container">
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+                <div class="project-tile"><a href=""><img src="" alt=""></a></div>
+
+
+
+
             </div>
             <h4 class="portfolio__continued">to be continued...</h4>
         </div>
@@ -57,23 +65,25 @@
         <div class="container">
             <h3 class="contact__title">Contact me</h3>
 
-        <form class="col-md-6">
-            <div class="form-group">
-                <input type="name" class="form-control" id="NameInput" placeholder="Name">
+        <div class="wrapper">
+            <form class="">
+                <div class="form-group">
+                    <input type="name" class="form-control" id="NameInput" placeholder="Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="EmailInput" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" id="PhoneInput" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control form-textarea" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default contact__submit">Send</button>
+            </form>
+            <div class="contact__desc">
+                <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my résumé or tips on how to solve your sudoku, random questions about the universe and the meaning of life; or even if only for some nice Fika here in stunning Toronto… just feel free to drop me a line anytime.</p>
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="EmailInput" placeholder="Email">
-            </div>
-            <div class="form-group">
-                <input type="tel" class="form-control" id="PhoneInput" placeholder="Phone">
-            </div>
-            <div class="form-group">
-                <textarea class="form-control form-textarea" rows="10" placeholder="Message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-default contact__submit">Send</button>
-        </form>
-        <div class="contact__desc col-md-6">
-            <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my résumé or tips on how to solve your sudoku, random questions about the universe and the meaning of life; or even if only for some nice Fika here in stunning Toronto… just feel free to drop me a line anytime.</p>
         </div>
         </div>
     </section> <!-- concact end-->
@@ -81,7 +91,7 @@
 
     <footer>
         <div class="container">
-            <ul class="socials col-md-3">
+            <ul class="socials">
                     <li>
                         <a href="#" class="button social">
                             <i class="fa fa-fw fa-linkedin"></i>
@@ -98,13 +108,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="button social">
+                        <a href="#" class="button social" id="profile-link">
                             <i class="fa fa-fw fa-github"></i>
                         </a>
                     </li>
             </ul>
 
-            <div class="copyright col-md-offset-5 col-md-4"><span class="logo">Alfavo</span> &#169;
+            <div class="copyright"><span class="logo">Alfavo</span> &#169;
                 <span>
                     <script>document.write(new Date().getFullYear())</script>
                     . All Rights Reversed
