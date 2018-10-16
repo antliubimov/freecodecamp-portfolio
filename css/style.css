@@ -29,6 +29,7 @@ body {
 }
 
 .container {
+    min-width: 370px;
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
@@ -43,9 +44,9 @@ body {
     display: flex;
     align-items: flex-end;
     margin-right: 20px;
-}
+  }
 
-.navbar-nav li a {
+   .navbar-nav li a {
     display: block;
     height: 40px;
     text-align: center;
@@ -57,8 +58,7 @@ body {
     text-decoration: none;
     background-color: #504286;
     color: #F2F0F4;
-
-}
+  }
    .navbar-nav li a:before {
     content: '';
     border-top: 20px solid transparent;
@@ -69,9 +69,9 @@ body {
     top: 0;
     padding: -1px 40px 0 10px;
     z-index: 1;
-}
+  }
 
-.navbar-nav li a:after {
+  .navbar-nav li a:after {
     content: "";
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
@@ -80,38 +80,38 @@ body {
     right: -21px;
     top: 0;
     z-index: 10;
-}
+  }
 
-.navbar-nav li a:hover:after {
+  .navbar-nav li a:hover:after {
     border-left-color:  #494257;
-}
+  }
 
-.navbar-nav li a:focus, .navbar-nav li a:hover  {
+  .navbar-nav li a:focus, .navbar-nav li a:hover  {
     background-color: #494257;
     color: #F2F0F4;
     transition: .3s;
     text-decoration: line-through;
-}
+  }
 
-.navbar-nav li:first-child a {
+  .navbar-nav li:first-child a {
     padding-left: 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-}
+  }
 
-.navbar-nav li:first-child a:before {
+  .navbar-nav li:first-child a:before {
     display: none;
-}
+  }
 
-.navbar-nav li:last-child a {
+  .navbar-nav li:last-child a {
     padding-right: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+  }
 
-.navbar-nav li:last-child a:after {
+  .navbar-nav li:last-child a:after {
     display: none;
-}
+  }
 
 }
 @media screen and (max-width: 750px) {
@@ -191,8 +191,16 @@ body {
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
+
   .navbar-nav li {
     padding: 5px 0;
+  }
+  .navbar-nav a {
+    text-decoration: none;
+    color: #232323;
+  }
+  .navbar-nav a:hover {
+    text-decoration: #504286 line-through;
   }
     .intro {
         flex-direction: column;
@@ -244,15 +252,7 @@ body {
 }
 
 .navbar-nav {
-
     list-style: none;
-}
-.navbar-nav a {
-    text-decoration: none;
-    color: #232323;
-}
-.navbar-nav a:hover {
-    text-decoration: #504286 line-through;
 }
 
 
@@ -288,14 +288,13 @@ body {
     font-size: 1.5em;
     color: #494257;
     display: flex;
-
 }
 
 .intro__img {
     border: 10px solid #504286;
     border-radius: 50%;
     max-width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /*==================
