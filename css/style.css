@@ -305,7 +305,7 @@ body {
     margin-top: 50px;
 }
 
-.portfolio__title, .portfolio__continued, .contact__title {
+.portfolio__title, .contact__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 400%;
     font-weight: 700;
@@ -313,9 +313,26 @@ body {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 0;
 }
 
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 3%;
+    grid-row-gap: 25px;
 
+
+}
+.project-tile img {
+    /* max-width: 230px; */
+    width: 100%;
+}
+.project-tile a {
+    text-decoration: none;
+    color: #F2F0F4;
+}
 
 /*==================
     CONTACTS
@@ -323,7 +340,6 @@ body {
 .contact .wrapper{
     display: flex;
     justify-content: space-between;
-    margin: -64px;
 }
 .form {
     /* flex: 1 1; */
