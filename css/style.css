@@ -33,6 +33,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 @media screen and (min-width: 751px) {
@@ -303,6 +304,7 @@ body {
 
 .portfolio, .contact {
     margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .portfolio__title, .contact__title {
@@ -322,16 +324,36 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 3%;
     grid-row-gap: 25px;
-
+    margin-bottom: 30px;
 
 }
+.project-tile {
+    position: relative;
+}
 .project-tile img {
-    /* max-width: 230px; */
     width: 100%;
+
 }
 .project-tile a {
     text-decoration: none;
     color: #F2F0F4;
+}
+.project-name {
+    background-color: #494257;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+
+}
+.show-all {
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 5px 20px;
+    color: #504286;
+    font-size: 1.7em;
+    font-weight: 600;
+    background-color: #F2F0F4;
+
 }
 
 /*==================
