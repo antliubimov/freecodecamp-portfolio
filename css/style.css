@@ -281,19 +281,10 @@ body {
 }
 .main {
     height: 100vh;
-    background-image: url('../img/header-background.jpg'); background-repeat: no-repeat;
+    background-image: url('https://raw.githubusercontent.com/antliubimov/freecodecamp-portfolio/master/img/header-background.jpg'); background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-}
-
-.portfolio {
-    background: url('../img/portfolio-background.jpg') no-repeat;
-    background-size: cover;
-}
-
-.contact {
-    background: url("../img/contact-background.jpg") no-repeat;
 }
 
 .intro {
@@ -312,6 +303,10 @@ body {
 /*==================
     PORTFOLIO
  ==================*/
+.portfolio {
+    background: url('https://raw.githubusercontent.com/antliubimov/freecodecamp-portfolio/master/img/portfolio-background.jpg') no-repeat;
+    background-size: cover;
+}
 
 .portfolio, .contact {
     margin-top: 50px;
@@ -367,6 +362,11 @@ body {
 /*==================
     CONTACTS
  ==================*/
+.contact {
+    background: url("https://raw.githubusercontent.com/antliubimov/freecodecamp-portfolio/master/img/contact-background.jpg") no-repeat;
+    background-size: cover;
+}
+
 .contact .wrapper{
     display: flex;
     justify-content: space-between;
