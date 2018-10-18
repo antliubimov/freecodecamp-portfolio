@@ -206,10 +206,10 @@ body {
  ==================*/
 .flex {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
 }
 .socials {
-    /* float: left; */
     list-style: none;
     margin: 10px 0;
 }
@@ -237,7 +237,6 @@ body {
     color: #504286;
     background-color: #F2F0F4;
     border: 2px solid #F2F0F4;
-
     transition: .3s;
 }
 
@@ -246,10 +245,8 @@ body {
 
 }
 .copyright {
-    /* float: right; */
-    font-size: 150%;
+    font-size: 130%;
     color: #F2F0F4;
-    /* margin-right: 40px; */
 }
 
 .copyright .logo {
@@ -272,6 +269,7 @@ body {
     .contact__desc {
         display: none;
     }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -383,6 +381,9 @@ body {
     }
     .contact__desc {
         text-align: start;
+    }
+    .flex {
+        flex-direction: column;
     }
 }
 
